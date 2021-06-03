@@ -12,9 +12,7 @@ function Home() {
                     <input className="searchbar"/>
                 </Col>
                 <Col className="productColumn">
-                
                 </Col>
-           
             </Row>
         </Container>
     )
