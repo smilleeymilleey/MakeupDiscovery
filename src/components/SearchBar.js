@@ -52,9 +52,10 @@ function getImages() {
             {category.map(category => 
                 <ul>
                  <li>
-                    <button onClick={getImages(image)} className="buttons">
+                    <button onClick={getImages()} className="buttons">
                         {category.name}
                     </button>
+                    <div>{image.map(images => images)}</div>
                  </li>
                 </ul>
             )}
