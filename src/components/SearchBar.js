@@ -28,7 +28,7 @@ function SearchBar() {
 // get images 
 
 function getImages() {
-    useEffect(() => {
+   
         fetch('https://api.thecatapi.com/v1/images',
             {   
                 method: "GET",
@@ -44,9 +44,9 @@ function getImages() {
                     setImage(response)
                 }
             })  
-        });
-        
-      getImages()
+    
+        }
+    
     return (
         <>
             {category.map(category => 
@@ -61,5 +61,5 @@ function getImages() {
         </>
     )
 }
-}
+
 export default SearchBar
