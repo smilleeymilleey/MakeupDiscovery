@@ -5,3 +5,8 @@
     width: 100%;
     align-items: center;
 }
+
+.categoryImages {
+    height: 100px;
+    width: 100px;
+}

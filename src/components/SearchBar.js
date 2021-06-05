@@ -64,9 +64,10 @@ function SearchBar() {
                     <button onClick={() => getAllImages(category.id)} className="buttons">
                         {category.name}
                     </button>
-                   {allImages.map(images => 
-                        <img src={images.url}></img>
-                    )}
+               
+                  {allImages.map(images => 
+                        <img className="categoryImages" src={images.url}></img>
+                    )} 
                  </li>
                 </ul>
             )}
