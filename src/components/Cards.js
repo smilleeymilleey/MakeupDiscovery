@@ -4,13 +4,17 @@ import CardDeck from 'react-bootstrap/CardDeck'
 import "../components/Cards.css"
 
 
-function Cards() {
+function Cards({getAllImages}) {
     return (
         <div>
+          <button onClick={() => getAllImages()} className="buttons">
+               
+            </button>
           <CardDeck>
             <Card className="cardContainer">
                 <Card.Img variant="top" src="holder.js/100px160" />
                 <Card.Body>
+              
                 <Card.Title>Card title</Card.Title>
                 <Card.Text>
                     This is a wider card with supporting text below as a natural lead-in to
