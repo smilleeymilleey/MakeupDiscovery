@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../components/SearchBar.css"
 require('dotenv').config()
 
@@ -6,13 +6,16 @@ require('dotenv').config()
 
 function SearchBar() {
    
+        const [button, setButton] = useState(0)
+      
     return (
         <>
-        <form>
+        
             <input></input>
-            <button type="submit">search</button>
+            <button onClick={() => setButton(button +1)} className="btnSearch"> Click Here </button>
+            <p>You clicked {button} times </p>
 
-        </form>
+    
         </>
     )
 }
